@@ -57,7 +57,61 @@ header li {
 }
 #filters ul {
     display: flex;
+    padding: 0px;
 }
-i {
-    padding: 0px 25px;
+#filters i {  
+    border-radius: 90px;
+    background: var(--color2);
+    height: 50px;
+    width: 50px;
+    text-align: center;
 }
+#filters li {
+    border: 1px solid var(--color2);
+    border-radius: 45px;
+    height: 50px;
+    margin: 50px;
+    align-items: center;
+}
+#filters a {
+    position: relative;
+    align-items: center;
+    align-content: center;
+    width: 50px;
+}
+.location ul {
+	display: flex;
+    flex-wrap: wrap;
+	justify-content: space-between;
+	align-content: space-around;
+    width: 800px;
+    height: 430px;
+}
+.location img {
+    width: 235px;
+    height: 155px;
+}
+aside {
+    height: 970px;
+    width: 430px;
+}
+aside ul {
+    display: flex;
+    flex-direction: column;
+    align-content: space-between;
+    height: 150px;
+    width: 350px;
+}
+aside li {
+    display: flex;
+}
+aside img {
+    height:130px;
+    width: 130px;
+}
+.hosting {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+}
+
