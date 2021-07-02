@@ -17,12 +17,9 @@
     box-sizing: border-box;
     color:black;
 }
-body {
-    margin: 50px;
-}
 header {
     display: flex;
-    margin: 5px;
+    margin: 50px;
     font-size: 1rem;
     justify-content: space-between;
     margin-bottom: 50px;
@@ -86,6 +83,7 @@ header li {
 	align-content: space-around;
     width: 800px;
     height: 430px;
+    padding: 30px;
 }
 .location img {
     width: 235px;
@@ -114,4 +112,45 @@ aside img {
     flex-direction: row;
     justify-content: space-around;
 }
-
+ul {
+    display: flex;
+    flex-direction: row;
+    padding: 0px 45px;
+}
+img {
+    width: 300px;
+    height: 390px;
+    border-radius: 10px;
+}
+ul .activities {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+.activities .frioul {
+    height: 110px;
+}
+.activities .pomegues {
+    height: 180px;
+}
+.activities .right {
+    height: 140px;
+}
+.marseille li {
+    display: flex;
+    justify-content: space-between;
+}
+footer {
+    margin-top: 60px;
+    background: var(--color3);
+    display: flex;
+    justify-content: space-around;
+}
+footer ul {
+    display: flex;
+    flex-direction: column;
+    padding: 45px;
+}
+footer li {
+    padding: 15px;
+}
