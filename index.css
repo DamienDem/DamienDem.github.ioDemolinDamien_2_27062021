@@ -17,12 +17,12 @@
     box-sizing: border-box;
     color:black;
 }
+
 header {
     display: flex;
-    margin: 50px;
     font-size: 1rem;
     justify-content: space-between;
-    margin-bottom: 50px;
+    padding: 50px;
 }
 header img {
     width: 100px;
@@ -39,35 +39,55 @@ header li {
     margin-left: 50px;
 }
 
-#search_bar  {
+main {
+    padding: 0px 50px;
+}
+
+
+#search_bar {
     display: flex;
-    margin: 20px 0px;  
-    border: 1px solid var(--color2);
+    border: 2px solid var(--color3);
     display: inline-block;
     border-radius: 15px;
+    margin: 25px 0px;
+    height: 100%; 
+}
+.fa-map-marker-alt {
+    background: var(--color3);  
 }
 #search_bar input {
-   border-style: none;
+    border-style: none;
+}
+#search_bar a {
+    background: var(--color1);
+    color: white;
 }
 #filters {
     display: flex;
-}
-#filters ul {
-    display: flex;
-    padding: 0px;
+    justify-content: space-between;
+    margin-bottom: 45px;
+    width: 930px;
+    align-items: center;
+
 }
 #filters i {  
     border-radius: 90px;
     background: var(--color2);
+    color: var(--color1);
     height: 50px;
     width: 50px;
     text-align: center;
+    transform: translate(-2px, -2px);
 }
-#filters li {
-    border: 1px solid var(--color2);
-    border-radius: 45px;
+.mention {
+    margin: 0px 15px;
+    font-weight: bold;
+    font-size: 1rem;
+}
+#filters .icon {
+    border: 2px solid var(--color3);
+    border-radius: 90px;
     height: 50px;
-    margin: 50px;
     align-items: center;
 }
 #filters a {
@@ -76,14 +96,37 @@ header li {
     align-content: center;
     width: 50px;
 }
+#filters li a {
+    width: 250px;
+}
+.fa, .fas {
+    font-weight: 900;
+    padding: 15px;
+    display: inline-block;
+}
+article {
+    display: flex;
+    flex-direction: column;
+}
+.location{
+    display: flex;
+    flex-direction: column;
+    padding: 25px;
+    background: var(--color3);
+    border-radius: 15px;
+}
 .location ul {
-	display: flex;
+    display: flex;
     flex-wrap: wrap;
 	justify-content: space-between;
 	align-content: space-around;
     width: 800px;
     height: 430px;
     padding: 30px;
+}
+.location ul li {
+    background: white;
+    border-radius: 15px;
 }
 .location img {
     width: 235px;
@@ -111,11 +154,11 @@ aside img {
     display: flex;
     flex-direction: row;
     justify-content: space-around;
+    height: 700px;
 }
 ul {
     display: flex;
     flex-direction: row;
-    padding: 0px 45px;
 }
 img {
     width: 300px;
@@ -126,6 +169,20 @@ ul .activities {
     display: flex;
     flex-direction: column;
     justify-content: space-between;
+}
+ul .star_rating {
+    display: flex;
+    padding: 0px;
+    flex-direction: row;
+    align-content: space-between;
+    width: 100px;
+    height: 15px;
+    align-items: baseline;
+    margin: 0 0.75rem 0.25rem 0.75rem;
+}
+
+.fa-star {
+    padding: 0px;
 }
 .activities .frioul {
     height: 110px;
