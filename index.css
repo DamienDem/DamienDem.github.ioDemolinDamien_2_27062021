@@ -1,12 +1,12 @@
-:root {
-    --color1:#0065FC;
-    --color2:#DEEBFF;
-    --color3:#F2F2F2;
-}
 @import url('https://fonts.googleapis.com/css2?family=Raleway:wght@100;400&display=swap');
 @font-face {
     font-family: Raleway;
     src: url('https://fonts.googleapis.com/css2?family=Raleway:wght@100;400&display=swap'); 
+}
+:root {
+    --color1:#0065FC;
+    --color2:#DEEBFF;
+    --color3:#F2F2F2;
 }
 * {
     font-family: Raleway;
@@ -17,7 +17,9 @@
     box-sizing: border-box;
     color:black;
 }
-
+body {
+    width: 1400px;
+}
 header {
     display: flex;
     font-size: 1rem;
@@ -35,6 +37,9 @@ header ul {
 header a {
     color:var(--color1);
 }
+header a:hover {
+    text-decoration: overline var(--color1) 2px;
+}
 header li {
     margin-left: 50px;
 }
@@ -47,20 +52,33 @@ main {
 #search_bar {
     display: flex;
     border: 2px solid var(--color3);
-    display: inline-block;
-    border-radius: 15px;
+    width: fit-content;
+    border-radius: 18px;
     margin: 25px 0px;
     height: 100%; 
 }
 .fa-map-marker-alt {
-    background: var(--color3);  
+    background: var(--color3);
+    border-radius: 15px 0px 0px 15px;  
 }
 #search_bar input {
     border-style: none;
+    padding-left: 20px;
 }
-#search_bar a {
+#search_bar h3 {
+    display: flex;
     background: var(--color1);
     color: white;
+    height: auto;
+    align-items: center;
+    padding:0px 20px;
+    border-radius: 0px 15px 15px 0px;
+    cursor: pointer;
+}
+#search_bar h3:hover {
+    color: var(--color1);
+    background:var(--color2);
+    transition: 0.8s;
 }
 #filters {
     display: flex;
@@ -79,6 +97,12 @@ main {
     text-align: center;
     transform: translate(-2px, -2px);
 }
+#filters .icon:hover, .mention:hover {
+    background-color: var(--color1);
+   /* color: white;*/
+    transition: 0.8s;
+}
+
 .mention {
     margin: 0px 15px;
     font-weight: bold;
@@ -104,16 +128,30 @@ main {
     padding: 15px;
     display: inline-block;
 }
+.fa-star {
+    color: var(--color1);
+}
 article {
     display: flex;
     flex-direction: column;
 }
 .location{
-    display: flex;
-    flex-direction: column;
-    padding: 25px;
+    padding: 0px 30px;
     background: var(--color3);
     border-radius: 15px;
+    height: 625px;
+    width: 880px;
+    perspective: 400px;
+}
+.location ul p,h3 {
+    padding-left: 5px;
+}
+.location h2 {
+position: relative;
+margin: 50px 0px 30px 0px;
+}
+.location .displayMore {
+    margin-top: 25px;
 }
 .location ul {
     display: flex;
@@ -122,30 +160,85 @@ article {
 	align-content: space-around;
     width: 800px;
     height: 430px;
-    padding: 30px;
 }
-.location ul li {
+.location ul .photo {
     background: white;
     border-radius: 15px;
+    padding: 5px;
+    margin-bottom: 30px;
+    height: 200px;
 }
 .location img {
     width: 235px;
-    height: 155px;
+    height: 120px;
+}
+ul .star_rating {
+    display: flex;
+    padding: 0px;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    align-content: space-between;
+    width: 100px;
+    height: 15px;
+    align-items: center;
+    margin: 5px 0px 0px 5px;
 }
 aside {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
     height: 970px;
     width: 430px;
+    background-color: var(--color3);
+    border-radius: 15px;
+    height: 625px;
+    width: 420px;
+    margin: 45px 40px;
+    padding: 30px 40px;
+    perspective: 200px;
 }
 aside ul {
     display: flex;
     flex-direction: column;
-    align-content: space-between;
     height: 150px;
     width: 350px;
+    perspective: 400px;
 }
-aside li {
+.chart {
     display: flex;
+    justify-content: space-between;
+    align-items: center;
 }
+.fa-chart-line {
+    padding: 0px;
+}
+.popular {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 35px;
+    padding: 5px;
+    background: white;
+    border-radius: 15px;
+    width: 345px;
+    height: 150px;
+}
+.popular:hover {
+    transform:translateZ(20px);
+    transition: 0.8s;
+}
+.popular img {
+    border-radius: 15px 0px 0px 15px;
+}
+.popular h3{
+    padding: 15px 0px 0px 15px;
+}
+.popular p {
+    padding-left: 15px;
+}
+.popular .star_rating {
+    padding: 35px 0px 0px 10px;
+}
+
 aside img {
     height:130px;
     width: 130px;
@@ -155,6 +248,7 @@ aside img {
     flex-direction: row;
     justify-content: space-around;
     height: 700px;
+    margin-left: 90px;
 }
 ul {
     display: flex;
@@ -165,22 +259,19 @@ img {
     height: 390px;
     border-radius: 10px;
 }
+#marseille_activities {
+    margin-bottom: 45px;
+    margin-top: 60px;
+}
+.marseille {
+    perspective: 400px;
+}
 ul .activities {
     display: flex;
     flex-direction: column;
     justify-content: space-between;
+    padding: 0px 40px;
 }
-ul .star_rating {
-    display: flex;
-    padding: 0px;
-    flex-direction: row;
-    align-content: space-between;
-    width: 100px;
-    height: 15px;
-    align-items: baseline;
-    margin: 0 0.75rem 0.25rem 0.75rem;
-}
-
 .fa-star {
     padding: 0px;
 }
@@ -196,6 +287,22 @@ ul .star_rating {
 .marseille li {
     display: flex;
     justify-content: space-between;
+    padding: 5px;
+}
+.marseille h3 {
+    padding: 20px;
+}
+.shadow {
+    border-radius: 15px;
+    box-shadow: 0px 0px 30px var(--color3);
+}
+.shadow:hover {
+    transform:translateZ(20px);
+    transition: 0.8s;
+}
+.photo:hover {
+    transform: translatez(20px);
+    transition: 0.8s;
 }
 footer {
     margin-top: 60px;
@@ -210,4 +317,7 @@ footer ul {
 }
 footer li {
     padding: 15px;
+}
+footer li:hover {
+    text-decoration: underline 2px black;
 }
