@@ -18,7 +18,7 @@
     color:black;
 }
 body {
-    width: 1400px;
+   width: 1400px;
 }
 header {
     display: flex;
@@ -84,7 +84,7 @@ main {
     display: flex;
     justify-content: space-between;
     margin-bottom: 45px;
-    width: 930px;
+    width: 75%;
     align-items: center;
 
 }
@@ -120,9 +120,6 @@ main {
     align-content: center;
     width: 50px;
 }
-#filters li a {
-    width: 250px;
-}
 .fa, .fas {
     font-weight: 900;
     padding: 15px;
@@ -131,6 +128,7 @@ main {
 .fa-star {
     color: var(--color1);
 }
+
 article {
     display: flex;
     flex-direction: column;
@@ -140,7 +138,7 @@ article {
     background: var(--color3);
     border-radius: 15px;
     height: 625px;
-    width: 880px;
+    width: 100%;
     perspective: 400px;
 }
 .location ul p,h3 {
@@ -158,7 +156,7 @@ margin: 50px 0px 30px 0px;
     flex-wrap: wrap;
 	justify-content: space-between;
 	align-content: space-around;
-    width: 800px;
+    width: 880px;
     height: 430px;
 }
 .location ul .photo {
@@ -183,12 +181,16 @@ ul .star_rating {
     align-items: center;
     margin: 5px 0px 0px 5px;
 }
+.grey i {
+    color: var(--color3);
+    box-shadow: 0px 0px 30px var(--color3);
+}
 aside {
     display: flex;
     flex-direction: column;
     flex-wrap: nowrap;
     height: 970px;
-    width: 430px;
+    width: 100%;
     background-color: var(--color3);
     border-radius: 15px;
     height: 625px;
@@ -201,7 +203,7 @@ aside ul {
     display: flex;
     flex-direction: column;
     height: 150px;
-    width: 350px;
+    width: 100%;
     perspective: 400px;
 }
 .chart {
@@ -243,7 +245,7 @@ aside img {
     height:130px;
     width: 130px;
 }
-.hosting {
+#marseille_hosting {
     display: flex;
     flex-direction: row;
     justify-content: space-around;
@@ -255,7 +257,7 @@ ul {
     flex-direction: row;
 }
 img {
-    width: 300px;
+    width: 100%;
     height: 390px;
     border-radius: 10px;
 }
@@ -265,6 +267,8 @@ img {
 }
 .marseille {
     perspective: 400px;
+    width: 100% ;
+    height: auto;
 }
 ul .activities {
     display: flex;
@@ -297,7 +301,7 @@ ul .activities {
     box-shadow: 0px 0px 30px var(--color3);
 }
 .shadow:hover {
-    transform:translateZ(20px);
+    transform:translateZ(15px);
     transition: 0.8s;
 }
 .photo:hover {
@@ -320,4 +324,71 @@ footer li {
 }
 footer li:hover {
     text-decoration: underline 2px black;
+}
+@media all and (max-width: 1450px) {
+    body {
+        padding: 5px;
+    }
+
+    #filters {
+        margin: 0px 0px 160px 0px;
+    }
+    #marseille_hosting{
+        display: flex;
+        flex-direction: column-reverse;
+        margin:200px 0px;
+    }
+    aside {
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+        height:300px;
+        padding: 10px 0px;
+        margin: 40px 0px;
+    }
+    aside ul {
+        display: flex;
+        flex-direction: column;
+        flex-wrap: wrap;
+        
+    }
+    .popular {
+            margin: 5px 0px 0px 40px;
+            width: 350px;   
+            height: 160px;
+    }
+    .popular h3 {
+        padding-top: 0px;
+    }
+    ul .star_rating {
+        padding: 0px;
+        margin: 0px;
+        display: flex;
+        justify-content: flex-start;
+    }
+    .chart {
+        padding : 10px 40px ; 
+    }
+    .location {
+        width: 100%;
+    }
+    .location ul {
+        width: 100%;
+    }
+    .star_rating {
+        width: 80px;
+    }
+    .photo {
+        display: flex;
+        flex-wrap: wrap;
+        width: 350px;
+        height: 200px;
+    }
+    .photo img {
+        width: 340px;
+    }
+    .responsive_location {
+        display: flex;
+        flex-wrap: wrap;
+    }
 }

@@ -20,38 +20,40 @@
          
     </header>
      <main>
-        <h1>Trouvez votre hébergement pour des vacances de rêve</h1>
-        <p>En plein centre ville ou en pleine nature</p>
-        <div id="search_bar">
-            <i class="fas fa-map-marker-alt" aria-hidden="true"></i>
-            <input type="text" placeholder="Marseille, France">
-            <h3>Rechercher</h3>                 
+         <div class="test">
+             <h1>Trouvez votre hébergement pour des vacances de rêve</h1>
+             <p>En plein centre ville ou en pleine nature</p>
+             <div id="search_bar">
+                 <i class="fas fa-map-marker-alt" aria-hidden="true"></i>
+                 <input type="text" placeholder="Marseille, France">
+                 <h3>Rechercher</h3>                 
+            </div>
+         <ul id=filters>
+             <li>
+                 Filtres
+             </li> 
+             <li class="icon">
+                 <a href="index.html"><i class="fas fa-money-bill-wave"></i>
+                     <span class=mention> Économique </span>
+                 </a>
+             </li>
+             <li class="icon">
+                 <a href="index.html"><i class="fas fa-child" aria-hidden="true"></i>
+                     <span class=mention> Familial </span> 
+                 </a>
+             </li>
+             <li class="icon">
+                 <a href="index.html"><i class="fas fa-heart" aria-hidden="true"></i>
+                     <span class=mention> Romantique </span> 
+                 </a>
+             </li>
+             <li class="icon">
+                 <a href="index.html"><i class="fas fa-dog" aria-hidden="true"></i>
+                     <span class=mention> Animaux autorisés </span>
+                 </a>
+             </li>
+         </ul>
         </div>           
-        <ul id=filters>
-            <li>
-                Filtres
-            </li> 
-            <li class="icon">
-                <a href="index.html"><i class="fas fa-money-bill-wave"></i>
-                    <span class=mention> Économique </span>
-                </a>
-            </li>
-            <li class="icon">
-                <a href="index.html"><i class="fas fa-child" aria-hidden="true"></i>
-                    <span class=mention> Familial </span> 
-                </a>
-            </li>
-            <li class="icon">
-                <a href="index.html"><i class="fas fa-heart" aria-hidden="true"></i>
-                    <span class=mention> Romantique </span> 
-                </a>
-            </li>
-            <li class="icon">
-                <a href="index.html"><i class="fas fa-dog" aria-hidden="true"></i>
-                    <span class=mention> Animaux autorisés </span>
-                </a>
-            </li>
-        </ul>
         <div id="marseille_hosting" class=hosting>     
             <article>
                 <span>
@@ -59,7 +61,7 @@
                 </span> 
                 <div class=location>
                     <h2> Hébergements à Marseille</h2>
-                        <ul>
+                        <ul class="responsive_location">
                             <li class="photo"> 
                                 <a href="index.html">
                                     <img src="images/hebergements/4_small/marcus-loke-WQJvWU_HZFo-unsplash.jpg" alt="Auberge La Cannebière">
@@ -79,7 +81,7 @@
                                         <i class="fas fa-star"></i>
                                     </li>
                                     <li>
-                                        <i  class="fas fa-star" ></i>
+                                        <span class="grey"><i  class="fas fa-star" ></i></span>
                                     </li>
                                 </ul>
                                 
@@ -126,7 +128,7 @@
                                             <i class="fas fa-star"></i>
                                         </li>
                                         <li>
-                                            <i class="fas fa-star" ></i>
+                                            <span class="grey"><i class="fas fa-star" ></i></span>
                                         </li>
                                     </ul>
                             </li>
@@ -146,10 +148,10 @@
                                             <i class="fas fa-star"></i>
                                         </li>
                                         <li>
-                                            <i class="fas fa-star"></i>
+                                            <span class="grey"><i class="fas fa-star"></i></span>
                                         </li>
                                         <li>
-                                            <i class="fas fa-star"></i>
+                                            <span class="grey"><i class="fas fa-star"></i></span>
                                         </li>
                                     </ul>
                                 </li>
@@ -172,7 +174,7 @@
                                         <i class="fas fa-star"></i>
                                     </li>
                                     <li>
-                                        <i class="fas fa-star"></i>
+                                        <span class="grey"><i class="fas fa-star"></i></span>
                                     </li>
                                 </ul>
                             </li>
@@ -215,9 +217,7 @@
                     </a>
                     <a href="index.html"> 
                     <h3>Hôtel Le soleil du matin</h3>
-                    <p>Nuit à partir de 128€</p>
-                    
-                    
+                    <p>Nuit à partir de 128€</p> 
                     <ul class="star_rating">
                         <li>
                             <i class="fas fa-star" ></i>
@@ -284,7 +284,7 @@
                             <i class="fas fa-star" ></i>
                         </li>
                         <li>
-                            <i class="fas fa-star" ></i>
+                            <span class="grey"><i class="fas fa-star" ></i></span>
                         </li>
                     </ul>
                     </a>
