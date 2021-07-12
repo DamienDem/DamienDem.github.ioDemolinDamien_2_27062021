@@ -1,3 +1,4 @@
+  
 <!DOCTYPE html>
 <html lang="fr">
 <head>
@@ -12,11 +13,15 @@
 <body>
     <header>
         <img src="images/logo/Reservia@3x.png" alt="logo">
-         <ul>
-            <li><a href="#marseille_hosting"> Hébergements</a></li>
-            <li><a href="#marseille_activities"> Activités</a></li>
-            <li><a href="index.html">S'inscrire</a></li>
-        </ul>
+        <div class="navbar">
+            <ul>
+               <li><a href="#marseille_hosting"> Hébergements</a></li>
+               <li><a href="#marseille_activities"> Activités</a></li>
+           </ul>
+           <div class="register">
+               <a href="index.html">S'inscrire</a>
+           </div>
+        </div>
          
     </header>
      <main>
@@ -26,33 +31,36 @@
              <div id="search_bar">
                  <i class="fas fa-map-marker-alt" aria-hidden="true"></i>
                  <input type="text" placeholder="Marseille, France">
-                 <h3>Rechercher</h3>                 
+                 <div class="search_logo">
+                     <h3>Rechercher</h3>
+                     <i class="fas fa-search"></i>                 
+                 </div>
             </div>
-         <ul id=filters>
-             <li>
-                 Filtres
-             </li> 
-             <li class="icon">
-                 <a href="index.html"><i class="fas fa-money-bill-wave"></i>
-                     <span class=mention> Économique </span>
-                 </a>
-             </li>
-             <li class="icon">
-                 <a href="index.html"><i class="fas fa-child" aria-hidden="true"></i>
-                     <span class=mention> Familial </span> 
-                 </a>
-             </li>
-             <li class="icon">
-                 <a href="index.html"><i class="fas fa-heart" aria-hidden="true"></i>
-                     <span class=mention> Romantique </span> 
-                 </a>
-             </li>
-             <li class="icon">
-                 <a href="index.html"><i class="fas fa-dog" aria-hidden="true"></i>
-                     <span class=mention> Animaux autorisés </span>
-                 </a>
-             </li>
-         </ul>
+            <div id=filters>
+                <h2>Filtres</h2>
+                <ul id="icon_list">
+                    <li class="icon">
+                        <a href="index.html"><i class="fas fa-money-bill-wave"></i>
+                            <span class=mention> Économique </span>
+                        </a>
+                    </li>
+                    <li class="icon">
+                        <a href="index.html"><i class="fas fa-child" aria-hidden="true"></i>
+                            <span class=mention> Familial </span> 
+                        </a>
+                    </li>
+                    <li class="icon">
+                        <a href="index.html"><i class="fas fa-heart" aria-hidden="true"></i>
+                            <span class=mention> Romantique </span> 
+                        </a>
+                    </li>
+                    <li class="icon">
+                        <a href="index.html"><i class="fas fa-dog" aria-hidden="true"></i>
+                            <span class=mention> Animaux autorisés </span>
+                        </a>
+                    </li>
+                </ul>
+            </div>
         </div>         
         <div id="marseille_hosting" class=hosting>     
             <article>
