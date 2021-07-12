@@ -17,8 +17,13 @@
     box-sizing: border-box;
     color:black;
 }
+<<<<<<< HEAD
 img {
     object-fit: cover;
+=======
+body {
+   /* max-width: 1450px;*/
+>>>>>>> 826ebd64edebb814eb6fa23573a4d26e5d1264bc
 }
 header {
     display: flex;
@@ -196,6 +201,10 @@ aside {
     display: flex;
     flex-direction: column;
     flex-wrap: nowrap;
+<<<<<<< HEAD
+=======
+    height: 970px;
+>>>>>>> 826ebd64edebb814eb6fa23573a4d26e5d1264bc
     width: 35%;
     background-color: var(--color3);
     border-radius: 15px;
@@ -289,7 +298,11 @@ ul .activities {
     flex-direction: column;
     justify-content: space-between;
     padding: 0px 40px;
+<<<<<<< HEAD
     box-sizing: border-box;
+=======
+    width: 100%;
+>>>>>>> 826ebd64edebb814eb6fa23573a4d26e5d1264bc
 }
 .fa-star {
     padding: 0px;
@@ -392,6 +405,7 @@ footer li:hover {
     
 }
 @media screen and (max-width:1300px) {
+<<<<<<< HEAD
     #icon_list {
         display: flex;
         flex-wrap: wrap;
@@ -431,8 +445,43 @@ footer li:hover {
     }
     .location {
         height: max-content;
+=======
+    #filters {
+        display: flex;
+        flex-wrap: wrap;
+    }
+    .icon {
+        margin: 10px;
+    }
+    aside {
+        height: 600px;
+    }
+    aside ul {
+        height: 350px;
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+    }
+    .popular {
+        width: 45%;
+    }
+}
+@media screen and (max-width:1300px) {
+    aside {
+        height: 1000px;
+    }
+    .popular {
+        width: 100%;
     }
     .responsive_location {
+        display: flex;
+        flex-wrap: wrap;
+    }
+    .responsive_location li {
+        width: 45%;
+>>>>>>> 826ebd64edebb814eb6fa23573a4d26e5d1264bc
+    }
+    .marseille {
         display: flex;
         flex-wrap: wrap;
         height: auto;
@@ -582,5 +631,33 @@ footer li:hover {
     #search_bar h3 {
         display: none;
         padding: 15px;
+    }
+    ul .activities{
+        display: flex;
+        flex-direction: row;
+        justify-content: space-around;
+    }
+    .activities {
+        width: 100%;
+        height: 450px;
+    }
+    .shadow {
+        width: 37%;
+        margin: 0px 40px;
+    }
+    .shadow:nth-child(1) {
+        order: 3;
+    }
+    .shadow:nth-child(3) {
+        order: 4;
+    }
+    .activities .frioul {
+        height: 390px;
+    }
+    .activities .pomegues {
+        height: 390px;
+    }    
+    .activities .right {
+        height: 390px;
     }
 }
